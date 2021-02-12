@@ -12,10 +12,10 @@ In this activity we're going to create a Magic 8 Ball application.  We'll use a 
 
 All the code you'll need to write for this app is going to be inside one function in the `/src/App.js` file.
 
-After you accept the assignment (or clone this repo), you'll want to install all the npm packages using Yarn:
+After you accept the assignment and clone this repo, you'll want to install all the node modules using `yarn`.
 
 ```bash
-$ cd Challenge-Magic8-Ball-React
+$ cd magic8-ball-challenge
 $ yarn
 ```
 
@@ -27,7 +27,4 @@ $ yarn start
 
 Now you're ready to code!
 
-To get started, find the `getAnswer` function, and write your code. Every time you save your updated file, the browser window displaying your app will reload.
-
-### A note for Cloud 9 users
-Once you run the `yarn start` command above,  You'll want to click the 'Preview' button to see your running application.  Should you need to refer to the [Cloud 9 Configuration Instructions](https://github.com/LEARNAcademy/cloud9-config) they can be found in your Syllabus.
+Get started by finding the `getAnswer` function, and write your code. Every time you save your updated file, the browser window displaying your app will reload.
