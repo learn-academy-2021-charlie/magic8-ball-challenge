@@ -27,4 +27,4 @@ $ yarn start
 
 Now you're ready to code!
 
-Get started by finding the `getAnswer` function, and write your code. Every time you save your updated file, the browser window displaying your app will reload.
+Get started by finding the `handleSubmit` method, and write your code. Every time you save your updated file, the browser window displaying your app will reload.
