@@ -1,54 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react'
 import './App.css'
 
-class App extends React.Component {
-  constructor(props){
+class App extends Component {
+  constructor(props) {
     super(props)
     this.state = {
-      // Add magic 8 ball outcomes to the array
-      answerArray: [],
-      question: ""
+      // ACTION ITEM: Add possible Magic8 Ball answers to the array
+      answerArray: ["Here is an answer"],
+      selectedAnswer: ""
     }
   }
 
-  getAnswer = () => {
-    // destructures answerArray out of state
+  handleSubmit = () => {
     const { answerArray } = this.state
-    // write your code here!
-    // Update the return statement below to reflect the outcome of your code.
-    return this.state.question
-  }
-
-  handleChange = (e) => {
-    // gets the event from the input on change and updates state
-    this.setState({ question: e.target.value })
-  }
-
-  handleSubmit = () =>{
-    // destructures question out of state
-    const { question } = this.state
-    // calls the getAnswer function and saves the outcome as answer
-    const answer = this.getAnswer()
-    this.setState({ answer: answer })
+    // ACTION ITEM: Your code here!!
+    // ACTION ITEM: Update the answerArray selection
+    this.setState({ selectedAnswer: answerArray[0] })
   }
 
   render(){
     return (
-      <div>
+      <>
         <h1>Magic 8 Ball</h1>
         <input
-          id="inputBox"
-          type='text'
-          onChange={ this.handleChange }
+          className="inputBox"
+          type="text"
         />
         <br />
         <button onClick={ this.handleSubmit }>
           Ask the Magic 8 Ball a Question
         </button>
-        <p> { this.state.answer } </p>
-      </div>
+        <p>{ this.state.selectedAnswer }</p>
+      </>
     )
   }
 }
 
-export default App;
+export default App
